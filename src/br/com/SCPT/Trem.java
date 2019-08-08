@@ -1,8 +1,9 @@
 package br.com.SCPT;
 
+import java.applet.Applet;
 import java.util.Random;
 
-public class Trem {
+public class Trem{
 	private boolean[] portas = new boolean[8];
 	private boolean andando;
 
@@ -72,6 +73,7 @@ public class Trem {
 	}
 
 	void statusPortas(boolean[] portas) {
+		System.out.println();
 		for (int i = 0; i < this.portas.length; i++) {
 			System.out.print("Porta numero " + (i + 1));
 			if (this.portas[i] == false) {
@@ -85,6 +87,7 @@ public class Trem {
 		} else {
 			System.out.println("Trem esta parado");
 		}
+		System.out.println();
 	}
 
 	void lotar() {
@@ -94,5 +97,6 @@ public class Trem {
 			portas[numeroAleatorio] = true;
 			// System.out.println("Porta numero "+(numeroAleatorio+1)+" [ABERTA]");
 		}
+		System.out.println("Houve uma lotacao no trem");
 	}
 }

@@ -5,11 +5,12 @@
 
 package br.com.SCPT;
 
+import java.applet.Applet;
 import java.util.Scanner;
 
-public class Main {
+public class Main{
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		int menu = 0;
 		Trem cptm = new Trem();
 		Scanner sc = new Scanner(System.in);
