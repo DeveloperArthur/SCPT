@@ -33,7 +33,6 @@ public class AppletNew extends Applet implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		if (e.getSource() == andar) {
 			cptm.andar();
 		} else if (e.getSource() == parar) {
@@ -46,6 +45,7 @@ public class AppletNew extends Applet implements ActionListener {
 			cptm.statusPortas(cptm.getPortas());
 		} else if (e.getSource() == lotacao) {
 			cptm.lotar();
+			System.out.println("Houve uma lotacao no trem");
 		}
 	}
 }

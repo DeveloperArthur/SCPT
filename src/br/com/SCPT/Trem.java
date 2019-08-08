@@ -97,6 +97,5 @@ public class Trem{
 			portas[numeroAleatorio] = true;
 			// System.out.println("Porta numero "+(numeroAleatorio+1)+" [ABERTA]");
 		}
-		System.out.println("Houve uma lotacao no trem");
 	}
 }
